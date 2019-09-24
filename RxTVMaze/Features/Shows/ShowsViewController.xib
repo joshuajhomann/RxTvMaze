@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowsViewController" customModule="RxTVMaze" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="4n6-zy-2ZZ" id="eX7-Yj-tjt"/>
+                <outlet property="tableView" destination="RmX-jr-qoQ" id="d95-NH-tjP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="eB5-RB-g6M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yI3-0w-Myh">
+                    <rect key="frame" x="0.0" y="44" width="454" height="936"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" id="4n6-zy-2ZZ">
+                            <rect key="frame" x="0.0" y="0.0" width="454" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RmX-jr-qoQ">
+                            <rect key="frame" x="0.0" y="56" width="454" height="880"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yI3-0w-Myh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aV3-JL-KKJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yI3-0w-Myh" secondAttribute="trailing" id="bKR-yw-xGh"/>
+                <constraint firstAttribute="bottom" secondItem="yI3-0w-Myh" secondAttribute="bottom" id="smQ-x7-JmN"/>
+                <constraint firstItem="yI3-0w-Myh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="t76-0j-jtw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="147.99107142857142"/>
+        </view>
+    </objects>
+</document>

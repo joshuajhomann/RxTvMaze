@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0342125B232D54AE0042F9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342125A232D54AE0042F9B6 /* AppDelegate.swift */; };
+		0342125D232D54AE0042F9B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342125C232D54AE0042F9B6 /* SceneDelegate.swift */; };
+		0342125F232D54AE0042F9B6 /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0342125E232D54AE0042F9B6 /* ShowsViewController.swift */; };
+		03421264232D54AF0042F9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03421263232D54AF0042F9B6 /* Assets.xcassets */; };
+		03421267232D54AF0042F9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03421265232D54AF0042F9B6 /* LaunchScreen.storyboard */; };
+		0345287F2336861D000B086E /* TvService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345287E2336861D000B086E /* TvService.swift */; };
+		034528812336867C000B086E /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034528802336867C000B086E /* Show.swift */; };
+		03452883233686D8000B086E /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03452882233686D8000B086E /* Episode.swift */; };
+		034528852336AE1E000B086E /* ShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034528842336AE1D000B086E /* ShowsViewModel.swift */; };
+		03452887233716E9000B086E /* ShowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03452886233716E9000B086E /* ShowsViewController.xib */; };
+		0345288B23371F47000B086E /* ShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345288A23371F47000B086E /* ShowTableViewCell.swift */; };
+		0345288D2337210E000B086E /* ShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0345288C2337210E000B086E /* ShowTableViewCell.xib */; };
+		0345288F23372455000B086E /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345288E23372455000B086E /* EpisodesViewController.swift */; };
+		0345289123372530000B086E /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345289023372530000B086E /* EpisodesViewModel.swift */; };
+		03452893233728BD000B086E /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03452892233728BD000B086E /* EpisodesViewController.xib */; };
+		03452895233728D1000B086E /* EpisodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03452894233728D1000B086E /* EpisodeCollectionViewCell.xib */; };
+		034528972337609B000B086E /* EpisodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034528962337609B000B086E /* EpisodeCollectionViewCell.swift */; };
+		03759B202339208D00A3F849 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03759B1F2339208D00A3F849 /* EpisodeDetailViewController.swift */; };
+		03759B22233920B300A3F849 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03759B21233920B300A3F849 /* EpisodeDetailViewController.xib */; };
+		03759B242339229B00A3F849 /* EpisodeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03759B232339229B00A3F849 /* EpisodeDetailViewModel.swift */; };
+		03759B2D2339255100A3F849 /* ShowsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03759B2C2339255100A3F849 /* ShowsCellViewModel.swift */; };
+		03759B2F2339259D00A3F849 /* CocoaAction+SideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03759B2E2339259D00A3F849 /* CocoaAction+SideEffect.swift */; };
+		03759B742339D8EB00A3F849 /* ShowsViewModelspec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03759B732339D8EB00A3F849 /* ShowsViewModelspec.swift */; };
+		03759B752339DB3900A3F849 /* Episodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 03759B322339D50400A3F849 /* Episodes.json */; };
+		03759B762339DB3C00A3F849 /* Shows.json in Resources */ = {isa = PBXBuildFile; fileRef = 03759B342339D5ED00A3F849 /* Shows.json */; };
+		0394FC68232D5BDC0042CBEA /* SearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394FC67232D5BDC0042CBEA /* SearchFlow.swift */; };
+		03BDC7E32339E42B002F3B2D /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDC7E22339E42B002F3B2D /* Dependencies.swift */; };
+		03BDC7E52339E457002F3B2D /* TvServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDC7E42339E457002F3B2D /* TvServiceProtocol.swift */; };
+		03BDC7E72339E468002F3B2D /* MockTvService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BDC7E62339E468002F3B2D /* MockTvService.swift */; };
+		9901B6CCB82B59B62A8C1B55 /* Pods_RxTVMaze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B875278A3C1B21C3924D4F9 /* Pods_RxTVMaze.framework */; };
+		C6A93244E302D826A58E0848 /* Pods_RxTVMazeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F497CE834A780C4797253B /* Pods_RxTVMazeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03759B6E2339D82200A3F849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0342124F232D54AE0042F9B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03421256232D54AE0042F9B6;
+			remoteInfo = RxTVMaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03421257232D54AE0042F9B6 /* RxTVMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTVMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0342125A232D54AE0042F9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0342125C232D54AE0042F9B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0342125E232D54AE0042F9B6 /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
+		03421263232D54AF0042F9B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03421266232D54AF0042F9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03421268232D54AF0042F9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0345287E2336861D000B086E /* TvService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvService.swift; sourceTree = "<group>"; };
+		034528802336867C000B086E /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		03452882233686D8000B086E /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		034528842336AE1D000B086E /* ShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewModel.swift; sourceTree = "<group>"; };
+		03452886233716E9000B086E /* ShowsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowsViewController.xib; sourceTree = "<group>"; };
+		0345288A23371F47000B086E /* ShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableViewCell.swift; sourceTree = "<group>"; };
+		0345288C2337210E000B086E /* ShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowTableViewCell.xib; sourceTree = "<group>"; };
+		0345288E23372455000B086E /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		0345289023372530000B086E /* EpisodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
+		03452892233728BD000B086E /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
+		03452894233728D1000B086E /* EpisodeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeCollectionViewCell.xib; sourceTree = "<group>"; };
+		034528962337609B000B086E /* EpisodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCollectionViewCell.swift; sourceTree = "<group>"; };
+		03759B1F2339208D00A3F849 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
+		03759B21233920B300A3F849 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
+		03759B232339229B00A3F849 /* EpisodeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewModel.swift; sourceTree = "<group>"; };
+		03759B2C2339255100A3F849 /* ShowsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsCellViewModel.swift; sourceTree = "<group>"; };
+		03759B2E2339259D00A3F849 /* CocoaAction+SideEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CocoaAction+SideEffect.swift"; sourceTree = "<group>"; };
+		03759B322339D50400A3F849 /* Episodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Episodes.json; sourceTree = "<group>"; };
+		03759B342339D5ED00A3F849 /* Shows.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shows.json; sourceTree = "<group>"; };
+		03759B692339D82200A3F849 /* RxTVMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTVMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03759B6D2339D82200A3F849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03759B732339D8EB00A3F849 /* ShowsViewModelspec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewModelspec.swift; sourceTree = "<group>"; };
+		0394FC67232D5BDC0042CBEA /* SearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlow.swift; sourceTree = "<group>"; };
+		03BDC7E22339E42B002F3B2D /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		03BDC7E42339E457002F3B2D /* TvServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvServiceProtocol.swift; sourceTree = "<group>"; };
+		03BDC7E62339E468002F3B2D /* MockTvService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTvService.swift; sourceTree = "<group>"; };
+		111A3B49576AE9D1FCDF4317 /* Pods-RxTVMaze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTVMaze.release.xcconfig"; path = "Target Support Files/Pods-RxTVMaze/Pods-RxTVMaze.release.xcconfig"; sourceTree = "<group>"; };
+		3B875278A3C1B21C3924D4F9 /* Pods_RxTVMaze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTVMaze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD401BDC196B7C637C7B9E43 /* Pods-RxTVMazeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTVMazeTests.debug.xcconfig"; path = "Target Support Files/Pods-RxTVMazeTests/Pods-RxTVMazeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9F497CE834A780C4797253B /* Pods_RxTVMazeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTVMazeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1617B483FBB85B0F60380D2 /* Pods-RxTVMaze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTVMaze.debug.xcconfig"; path = "Target Support Files/Pods-RxTVMaze/Pods-RxTVMaze.debug.xcconfig"; sourceTree = "<group>"; };
+		E88CB1DBDA89216C64642AFA /* Pods-RxTVMazeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTVMazeTests.release.xcconfig"; path = "Target Support Files/Pods-RxTVMazeTests/Pods-RxTVMazeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03421254232D54AE0042F9B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9901B6CCB82B59B62A8C1B55 /* Pods_RxTVMaze.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03759B662339D82200A3F849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A93244E302D826A58E0848 /* Pods_RxTVMazeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0342124E232D54AE0042F9B6 = {
+			isa = PBXGroup;
+			children = (
+				03421259232D54AE0042F9B6 /* RxTVMaze */,
+				03759B6A2339D82200A3F849 /* RxTVMazeTests */,
+				03421258232D54AE0042F9B6 /* Products */,
+				4FC41D4C989B7C68A6C5F2A1 /* Pods */,
+				CAA55026FBF59EF28C398ED1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03421258232D54AE0042F9B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03421257232D54AE0042F9B6 /* RxTVMaze.app */,
+				03759B692339D82200A3F849 /* RxTVMazeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03421259232D54AE0042F9B6 /* RxTVMaze */ = {
+			isa = PBXGroup;
+			children = (
+				0342125A232D54AE0042F9B6 /* AppDelegate.swift */,
+				0342125C232D54AE0042F9B6 /* SceneDelegate.swift */,
+				03421263232D54AF0042F9B6 /* Assets.xcassets */,
+				03421265232D54AF0042F9B6 /* LaunchScreen.storyboard */,
+				03421268232D54AF0042F9B6 /* Info.plist */,
+				03759B27233924C000A3F849 /* Dependencies */,
+				03759B25233924A800A3F849 /* Models */,
+				03759B29233924E900A3F849 /* Features */,
+				03759B2E2339259D00A3F849 /* CocoaAction+SideEffect.swift */,
+			);
+			path = RxTVMaze;
+			sourceTree = "<group>";
+		};
+		03759B25233924A800A3F849 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				034528802336867C000B086E /* Show.swift */,
+				03452882233686D8000B086E /* Episode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03759B27233924C000A3F849 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				03BDC7E22339E42B002F3B2D /* Dependencies.swift */,
+				03BDC7E42339E457002F3B2D /* TvServiceProtocol.swift */,
+				03BDC7E62339E468002F3B2D /* MockTvService.swift */,
+				0345287E2336861D000B086E /* TvService.swift */,
+				03759B322339D50400A3F849 /* Episodes.json */,
+				03759B342339D5ED00A3F849 /* Shows.json */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		03759B28233924DA00A3F849 /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				0342125E232D54AE0042F9B6 /* ShowsViewController.swift */,
+				0345288A23371F47000B086E /* ShowTableViewCell.swift */,
+				034528842336AE1D000B086E /* ShowsViewModel.swift */,
+				03759B2C2339255100A3F849 /* ShowsCellViewModel.swift */,
+				0345288C2337210E000B086E /* ShowTableViewCell.xib */,
+				03452886233716E9000B086E /* ShowsViewController.xib */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
+		03759B29233924E900A3F849 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0394FC67232D5BDC0042CBEA /* SearchFlow.swift */,
+				03759B2A2339251000A3F849 /* Episode Detail */,
+				03759B2B2339252900A3F849 /* Episodes */,
+				03759B28233924DA00A3F849 /* Shows */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		03759B2A2339251000A3F849 /* Episode Detail */ = {
+			isa = PBXGroup;
+			children = (
+				03759B1F2339208D00A3F849 /* EpisodeDetailViewController.swift */,
+				03759B21233920B300A3F849 /* EpisodeDetailViewController.xib */,
+				03759B232339229B00A3F849 /* EpisodeDetailViewModel.swift */,
+			);
+			path = "Episode Detail";
+			sourceTree = "<group>";
+		};
+		03759B2B2339252900A3F849 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				0345288E23372455000B086E /* EpisodesViewController.swift */,
+				034528962337609B000B086E /* EpisodeCollectionViewCell.swift */,
+				0345289023372530000B086E /* EpisodesViewModel.swift */,
+				03452892233728BD000B086E /* EpisodesViewController.xib */,
+				03452894233728D1000B086E /* EpisodeCollectionViewCell.xib */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		03759B6A2339D82200A3F849 /* RxTVMazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				03759B6D2339D82200A3F849 /* Info.plist */,
+				03759B732339D8EB00A3F849 /* ShowsViewModelspec.swift */,
+			);
+			path = RxTVMazeTests;
+			sourceTree = "<group>";
+		};
+		4FC41D4C989B7C68A6C5F2A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1617B483FBB85B0F60380D2 /* Pods-RxTVMaze.debug.xcconfig */,
+				111A3B49576AE9D1FCDF4317 /* Pods-RxTVMaze.release.xcconfig */,
+				AD401BDC196B7C637C7B9E43 /* Pods-RxTVMazeTests.debug.xcconfig */,
+				E88CB1DBDA89216C64642AFA /* Pods-RxTVMazeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAA55026FBF59EF28C398ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B875278A3C1B21C3924D4F9 /* Pods_RxTVMaze.framework */,
+				C9F497CE834A780C4797253B /* Pods_RxTVMazeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03421256232D54AE0042F9B6 /* RxTVMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0342126B232D54AF0042F9B6 /* Build configuration list for PBXNativeTarget "RxTVMaze" */;
+			buildPhases = (
+				111DA99F9480AD9A5D965353 /* [CP] Check Pods Manifest.lock */,
+				03421253232D54AE0042F9B6 /* Sources */,
+				03421254232D54AE0042F9B6 /* Frameworks */,
+				03421255232D54AE0042F9B6 /* Resources */,
+				D5A5F894F8A42944925A9242 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxTVMaze;
+			productName = RxTVMaze;
+			productReference = 03421257232D54AE0042F9B6 /* RxTVMaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03759B682339D82200A3F849 /* RxTVMazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03759B702339D82200A3F849 /* Build configuration list for PBXNativeTarget "RxTVMazeTests" */;
+			buildPhases = (
+				42C6C5733C02E527E7374CE5 /* [CP] Check Pods Manifest.lock */,
+				03759B652339D82200A3F849 /* Sources */,
+				03759B662339D82200A3F849 /* Frameworks */,
+				03759B672339D82200A3F849 /* Resources */,
+				74590B98B219475C84913E4C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03759B6F2339D82200A3F849 /* PBXTargetDependency */,
+			);
+			name = RxTVMazeTests;
+			productName = RxTVMazeTests;
+			productReference = 03759B692339D82200A3F849 /* RxTVMazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0342124F232D54AE0042F9B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = com.josh;
+				TargetAttributes = {
+					03421256232D54AE0042F9B6 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					03759B682339D82200A3F849 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+						TestTargetID = 03421256232D54AE0042F9B6;
+					};
+				};
+			};
+			buildConfigurationList = 03421252232D54AE0042F9B6 /* Build configuration list for PBXProject "RxTVMaze" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0342124E232D54AE0042F9B6;
+			productRefGroup = 03421258232D54AE0042F9B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03421256232D54AE0042F9B6 /* RxTVMaze */,
+				03759B682339D82200A3F849 /* RxTVMazeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03421255232D54AE0042F9B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03421267232D54AF0042F9B6 /* LaunchScreen.storyboard in Resources */,
+				03452895233728D1000B086E /* EpisodeCollectionViewCell.xib in Resources */,
+				03452893233728BD000B086E /* EpisodesViewController.xib in Resources */,
+				03452887233716E9000B086E /* ShowsViewController.xib in Resources */,
+				03759B22233920B300A3F849 /* EpisodeDetailViewController.xib in Resources */,
+				0345288D2337210E000B086E /* ShowTableViewCell.xib in Resources */,
+				03421264232D54AF0042F9B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03759B672339D82200A3F849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03759B762339DB3C00A3F849 /* Shows.json in Resources */,
+				03759B752339DB3900A3F849 /* Episodes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		111DA99F9480AD9A5D965353 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTVMaze-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42C6C5733C02E527E7374CE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTVMazeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74590B98B219475C84913E4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxTVMazeTests/Pods-RxTVMazeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxTVMazeTests/Pods-RxTVMazeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTVMazeTests/Pods-RxTVMazeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5A5F894F8A42944925A9242 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxTVMaze/Pods-RxTVMaze-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxTVMaze/Pods-RxTVMaze-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTVMaze/Pods-RxTVMaze-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03421253232D54AE0042F9B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BDC7E72339E468002F3B2D /* MockTvService.swift in Sources */,
+				03759B2D2339255100A3F849 /* ShowsCellViewModel.swift in Sources */,
+				0345288F23372455000B086E /* EpisodesViewController.swift in Sources */,
+				03759B202339208D00A3F849 /* EpisodeDetailViewController.swift in Sources */,
+				03BDC7E32339E42B002F3B2D /* Dependencies.swift in Sources */,
+				0345289123372530000B086E /* EpisodesViewModel.swift in Sources */,
+				03BDC7E52339E457002F3B2D /* TvServiceProtocol.swift in Sources */,
+				03759B242339229B00A3F849 /* EpisodeDetailViewModel.swift in Sources */,
+				034528812336867C000B086E /* Show.swift in Sources */,
+				0342125F232D54AE0042F9B6 /* ShowsViewController.swift in Sources */,
+				03759B2F2339259D00A3F849 /* CocoaAction+SideEffect.swift in Sources */,
+				03452883233686D8000B086E /* Episode.swift in Sources */,
+				034528852336AE1E000B086E /* ShowsViewModel.swift in Sources */,
+				034528972337609B000B086E /* EpisodeCollectionViewCell.swift in Sources */,
+				0345287F2336861D000B086E /* TvService.swift in Sources */,
+				0394FC68232D5BDC0042CBEA /* SearchFlow.swift in Sources */,
+				0345288B23371F47000B086E /* ShowTableViewCell.swift in Sources */,
+				0342125B232D54AE0042F9B6 /* AppDelegate.swift in Sources */,
+				0342125D232D54AE0042F9B6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03759B652339D82200A3F849 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03759B742339D8EB00A3F849 /* ShowsViewModelspec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03759B6F2339D82200A3F849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03421256232D54AE0042F9B6 /* RxTVMaze */;
+			targetProxy = 03759B6E2339D82200A3F849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03421265232D54AF0042F9B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03421266232D54AF0042F9B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03421269232D54AF0042F9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0342126A232D54AF0042F9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0342126C232D54AF0042F9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1617B483FBB85B0F60380D2 /* Pods-RxTVMaze.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = RxTVMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.RxTVMaze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0342126D232D54AF0042F9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111A3B49576AE9D1FCDF4317 /* Pods-RxTVMaze.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = RxTVMaze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.RxTVMaze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03759B712339D82200A3F849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD401BDC196B7C637C7B9E43 /* Pods-RxTVMazeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = RxTVMazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.RxTVMazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTVMaze.app/RxTVMaze";
+			};
+			name = Debug;
+		};
+		03759B722339D82200A3F849 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88CB1DBDA89216C64642AFA /* Pods-RxTVMazeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = RxTVMazeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.RxTVMazeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTVMaze.app/RxTVMaze";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03421252232D54AE0042F9B6 /* Build configuration list for PBXProject "RxTVMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03421269232D54AF0042F9B6 /* Debug */,
+				0342126A232D54AF0042F9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0342126B232D54AF0042F9B6 /* Build configuration list for PBXNativeTarget "RxTVMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0342126C232D54AF0042F9B6 /* Debug */,
+				0342126D232D54AF0042F9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03759B702339D82200A3F849 /* Build configuration list for PBXNativeTarget "RxTVMazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03759B712339D82200A3F849 /* Debug */,
+				03759B722339D82200A3F849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0342124F232D54AE0042F9B6 /* Project object */;
+}

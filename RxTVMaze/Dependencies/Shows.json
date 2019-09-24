@@ -1,0 +1,570 @@
+[
+  {
+    "score" : 17.215402999999998,
+    "show" : {
+      "runtime" : 60,
+      "language" : "English",
+      "status" : "Ended",
+      "url" : "http://www.tvmaze.com/shows/82/game-of-thrones",
+      "weight" : 98,
+      "webChannel" : {
+        "id" : 22,
+        "name" : "HBO Go",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/190/476117.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/190/476117.jpg"
+      },
+      "summary" : "<p>Based on the bestselling book series <i>A Song of Ice and Fire</i> by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the <b>Game of Thrones</b>, you either win or you die.</p>",
+      "externals" : {
+        "thetvdb" : 121361,
+        "imdb" : "tt0944947",
+        "tvrage" : 24493
+      },
+      "schedule" : {
+        "days" : [
+          "Sunday"
+        ],
+        "time" : "21:00"
+      },
+      "updated" : 1569002048,
+      "name" : "Game of Thrones",
+      "type" : "Scripted",
+      "id" : 82,
+      "officialSite" : "http://www.hbo.com/game-of-thrones",
+      "premiered" : "2011-04-17",
+      "network" : {
+        "id" : 8,
+        "name" : "HBO",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+        "Drama",
+        "Adventure",
+        "Fantasy"
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/1623968"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/82"
+        }
+      },
+      "rating" : {
+        "average" : 9.0999999999999996
+      }
+    }
+  },
+  {
+    "score" : 15.986227,
+    "show" : {
+      "runtime" : 60,
+      "language" : "English",
+      "status" : "Running",
+      "url" : "http://www.tvmaze.com/shows/25819/ellens-game-of-games",
+      "weight" : 65,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/177/444233.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/177/444233.jpg"
+      },
+      "summary" : "<p><b>Ellen's Game of Games</b> is an hour of supersized versions of the most popular and hilariously fun games from <i>The Ellen DeGeneres Show</i>. Contestants, pulled right from the audience, will have to maneuver massive obstacles, answer questions under immense pressure and face a gigantic plunge into the unknown. While every episode will feature DeGeneres' one-of-kind comedy, personality and a unique roster of games, they'll all end the same way — with DeGeneres giving someone a chance at a huge cash prize.</p>",
+      "externals" : {
+        "thetvdb" : 338499,
+        "imdb" : "tt7369770",
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Tuesday"
+        ],
+        "time" : "20:00"
+      },
+      "updated" : 1553355896,
+      "name" : "Ellen's Game of Games",
+      "type" : "Game Show",
+      "id" : 25819,
+      "officialSite" : "https://www.nbc.com/ellens-game-of-games",
+      "premiered" : "2017-12-18",
+      "network" : {
+        "id" : 1,
+        "name" : "NBC",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/1627896"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/25819"
+        }
+      },
+      "rating" : {
+        "average" : 4.4000000000000004
+      }
+    }
+  },
+  {
+    "score" : 15.880108,
+    "show" : {
+      "runtime" : 60,
+      "language" : "English",
+      "status" : "Ended",
+      "url" : "http://www.tvmaze.com/shows/5071/game-of-silence",
+      "weight" : 79,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/50/125757.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/50/125757.jpg"
+      },
+      "summary" : "<p>Five best friends have a dark secret they thought was buried 25 years ago, but they soon discover that you can't hide your past forever. A gripping new drama about friendship, love, revenge and the moral dilemma of how far one will go in the pursuit of justice.</p><p>Jackson Brooks is a successful attorney who seems to have it all. He's engaged to his boss, Marina, and he's on the fast track to becoming partner at his firm, but his world is turned upside down when his long-lost childhood friends unexpectedly reappear after 25 years.</p>",
+      "externals" : {
+        "thetvdb" : 295641,
+        "imdb" : "tt4074374",
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Thursday"
+        ],
+        "time" : "22:00"
+      },
+      "updated" : 1533047962,
+      "name" : "Game of Silence",
+      "type" : "Scripted",
+      "id" : 5071,
+      "officialSite" : "http://www.nbc.com/game-of-silence",
+      "premiered" : "2016-04-12",
+      "network" : {
+        "id" : 1,
+        "name" : "NBC",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+        "Drama",
+        "Action",
+        "Crime"
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/788284"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/5071"
+        }
+      },
+      "rating" : {
+        "average" : 7.5
+      }
+    }
+  },
+  {
+    "score" : 13.196455,
+    "show" : {
+      "runtime" : null,
+      "language" : "English",
+      "status" : "Running",
+      "url" : "http://www.tvmaze.com/shows/40739/game-of-clones",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/182/455309.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/182/455309.jpg"
+      },
+      "summary" : "<p>MTV's most eligible reality stars are given the opportunity to date seven clones of their celebrity crush. They're forced to look beyond each identical face in hope of finding their perfect match. Through a series of compatibility tests, dates and more, each clone strives to stand out from the rest during this radical dating experience.</p>",
+      "externals" : {
+        "thetvdb" : null,
+        "imdb" : null,
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Thursday"
+        ],
+        "time" : "21:00"
+      },
+      "updated" : 1554477988,
+      "name" : "Game of Clones",
+      "type" : "Reality",
+      "id" : 40739,
+      "officialSite" : "http://www.mtv.com/shows/game-of-clones",
+      "premiered" : "2019-02-21",
+      "network" : {
+        "id" : 22,
+        "name" : "MTV",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/1635765"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/40739"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  },
+  {
+    "score" : 11.311752,
+    "show" : {
+      "runtime" : 90,
+      "language" : "English",
+      "status" : "Running",
+      "url" : "http://www.tvmaze.com/shows/39060/game-of-games-australia",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : null,
+      "summary" : "<p>Grant Denyer and co-host Ash London guide a slew of unsuspecting contestants as they answer questions under crushing pressure, manoeuvre through massive obstacles and face huge plunges into the unknown.</p>",
+      "externals" : {
+        "thetvdb" : null,
+        "imdb" : null,
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Sunday"
+        ],
+        "time" : "19:00"
+      },
+      "updated" : 1545704772,
+      "name" : "Game of Games Australia",
+      "type" : "Game Show",
+      "id" : 39060,
+      "officialSite" : null,
+      "premiered" : "2018-10-07",
+      "network" : {
+        "id" : 149,
+        "name" : "Network 10",
+        "country" : {
+          "name" : "Australia",
+          "timezone" : "Australia/Sydney",
+          "code" : "AU"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/1583025"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/39060"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  },
+  {
+    "score" : 11.311752,
+    "show" : {
+      "runtime" : 90,
+      "language" : "English",
+      "status" : "Ended",
+      "url" : "http://www.tvmaze.com/shows/5592/the-name-of-the-game",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/22/56573.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/22/56573.jpg"
+      },
+      "summary" : "<p><i><b>\"The Name of the Game\"</b></i> was actually three series under one title. It rotated among three characters working at Howard Publications, a large magazine publishing company—Jeffrey \"Jeff\" Dillon, a crusading reporter with <i>People</i> magazine (before there was a real-life <i>People</i> magazine); Glenn Howard, the sophisticated, well-connected publisher; and Daniel \"Dan\" Farrell, the editor of <i>Crime</i> magazine. Serving as a common connection was Peggy Maxwell, the editorial assistant for each.</p>",
+      "externals" : {
+        "thetvdb" : 77546,
+        "imdb" : null,
+        "tvrage" : 6006
+      },
+      "schedule" : {
+        "days" : [
+          "Friday"
+        ],
+        "time" : "20:30"
+      },
+      "updated" : 1557890199,
+      "name" : "The Name of the Game",
+      "type" : "Scripted",
+      "id" : 5592,
+      "officialSite" : null,
+      "premiered" : "1968-09-20",
+      "network" : {
+        "id" : 1,
+        "name" : "NBC",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/337865"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/5592"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  },
+  {
+    "score" : 11.311752,
+    "show" : {
+      "runtime" : 60,
+      "language" : "English",
+      "status" : "Ended",
+      "url" : "http://www.tvmaze.com/shows/16859/game-of-arms",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/56/141207.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/56/141207.jpg"
+      },
+      "summary" : "<p><i>Game of Arms</i> is a look inside the raw and highly competitive world of American arm wrestling. The series follows the members of five regional arm wrestling clubs in Erie, PA, Kansas City, KS, New York, NY, Sacramento, CA and Baton Rouge, LA as they hit the road and wager their reputation, relationships and money for the sport. Game of Arms not only focuses on the technique and skill in this high-stakes world, but also the family, careers and personal struggles of each man outside of the sport. Each episode features a dramatic regional match, leading to a tournament finale where the entire cast will compete for prize money and bragging rights.</p>",
+      "externals" : {
+        "thetvdb" : 278591,
+        "imdb" : "tt3525596",
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Tuesday"
+        ],
+        "time" : "22:00"
+      },
+      "updated" : 1462658234,
+      "name" : "Game of Arms",
+      "type" : "Reality",
+      "id" : 16859,
+      "officialSite" : null,
+      "premiered" : "2014-02-25",
+      "network" : {
+        "id" : 20,
+        "name" : "AMC",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/775330"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/16859"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  },
+  {
+    "score" : 11.311752,
+    "show" : {
+      "runtime" : 60,
+      "language" : "English",
+      "status" : "Running",
+      "url" : "http://www.tvmaze.com/shows/15938/game-of-homes",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/53/133810.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/53/133810.jpg"
+      },
+      "summary" : "<p>In <b>Game of Homes</b>, teams of skilled amateur home renovators compete for the chance to trade their skills for the prize of a lifetime. The teams save rundown houses that are marked to be torn down and revive them into dream homes. Each team must redo the houses room by room, as they cope with small budgets, tight deadlines and even tighter living spaces.</p><p>The action-based series pits each team's skill, ingenuity and teamwork against each other. In the finale, in addition to the judges, the public will cast their vote.</p><p>The winning couple each week receives a prize that is theirs to keep. In the dramatic finale, the team whose finished house is voted the best – WINS THEIR HOUSE AND A PLOT OF LAND TO PUT IT ON!</p>",
+      "externals" : {
+        "thetvdb" : null,
+        "imdb" : null,
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Tuesday"
+        ],
+        "time" : "22:00"
+      },
+      "updated" : 1477448915,
+      "name" : "Game of Homes",
+      "type" : "Reality",
+      "id" : 15938,
+      "officialSite" : "http://www.wnetwork.com/shows/game-homes",
+      "premiered" : "2015-03-17",
+      "network" : {
+        "id" : 286,
+        "name" : "W Network",
+        "country" : {
+          "name" : "Canada",
+          "timezone" : "America/Halifax",
+          "code" : "CA"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/803296"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/15938"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  },
+  {
+    "score" : 11.311752,
+    "show" : {
+      "runtime" : 30,
+      "language" : "English",
+      "status" : "Ended",
+      "url" : "http://www.tvmaze.com/shows/39241/the-game-of-life",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : null,
+      "summary" : "<p>Each week, comedian Frank Nicotero hosts an interactive version of the classic board game, <b>The Game of Life</b>. In each episode, contestants compete to win cash and prizes. This live-action game show features two families who get to spin the wheel in a journey through a virtual world. Items from the original board game are featured in each episode, such as the iconic car and the rainbow-colored spinner, as well as the familiar roadblocks and obstacles. For the first time, the game is redesigned for television in a completely 3-D world.</p>",
+      "externals" : {
+        "thetvdb" : null,
+        "imdb" : "tt2099433",
+        "tvrage" : null
+      },
+      "schedule" : {
+        "days" : [
+          "Sunday"
+        ],
+        "time" : "20:00"
+      },
+      "updated" : 1540246482,
+      "name" : "The Game of Life",
+      "type" : "Game Show",
+      "id" : 39241,
+      "officialSite" : null,
+      "premiered" : "2011-09-17",
+      "network" : {
+        "id" : 176,
+        "name" : "Discovery Family",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/1551210"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/39241"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  },
+  {
+    "score" : 11.311752,
+    "show" : {
+      "runtime" : 60,
+      "language" : "English",
+      "status" : "To Be Determined",
+      "url" : "http://www.tvmaze.com/shows/5354/game-of-crowns",
+      "weight" : 0,
+      "webChannel" : null,
+      "image" : {
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/22/55403.jpg",
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/22/55403.jpg"
+      },
+      "summary" : "<p><b>Game of Crowns</b> is a docu-series that follows six pageant wives competing on the \"Mrs.\" circuit whose lives revolve around glamour, perfection and winning at any cost. The cast includes Shelley Carbone, Lynne Diamante, Leha Guilmette, Lori-Ann Marchese, Susanna Paliotta, and Vanassa Sebastian. From trophy wives to pageant moms, these ultra-competitive ladies share their love of the game and will stop at nothing to win local and national pageants for beauty queen status. In each hour-long episode, the ladies will compete to snatch the spotlight while viewers watch their intense preparation that includes obsessing over the perfect swimsuit, working tirelessly with trainers and honing their interview skills with coaches -- all while being dedicated mothers and wives. How will the women settle their scores both on the stage and off?</p>",
+      "externals" : {
+        "thetvdb" : 282055,
+        "imdb" : "tt3776022",
+        "tvrage" : 42185
+      },
+      "schedule" : {
+        "days" : [
+          "Sunday"
+        ],
+        "time" : "22:00"
+      },
+      "updated" : 1478154125,
+      "name" : "Game of Crowns",
+      "type" : "Reality",
+      "id" : 5354,
+      "officialSite" : "http://www.bravotv.com/game-of-crowns",
+      "premiered" : "2014-07-13",
+      "network" : {
+        "id" : 52,
+        "name" : "Bravo",
+        "country" : {
+          "name" : "United States",
+          "timezone" : "America/New_York",
+          "code" : "US"
+        }
+      },
+      "genres" : [
+
+      ],
+      "_links" : {
+        "previousepisode" : {
+          "href" : "http://api.tvmaze.com/episodes/323994"
+        },
+        "self" : {
+          "href" : "http://api.tvmaze.com/shows/5354"
+        }
+      },
+      "rating" : {
+        "average" : null
+      }
+    }
+  }
+]

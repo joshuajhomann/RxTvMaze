@@ -1,0 +1,6 @@
+framework module Pods_RxTVMaze {
+  umbrella header "Pods-RxTVMaze-umbrella.h"
+
+  export *
+  module * { export * }
+}

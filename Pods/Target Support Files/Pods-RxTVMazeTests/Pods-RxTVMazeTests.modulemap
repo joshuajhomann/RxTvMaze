@@ -1,0 +1,6 @@
+framework module Pods_RxTVMazeTests {
+  umbrella header "Pods-RxTVMazeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
