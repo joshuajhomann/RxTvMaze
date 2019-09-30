@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowTableViewCell" rowHeight="57" id="rKe-83-uhN" customClass="ShowTableViewCell" customModule="RxTVMaze" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowTableViewCell" rowHeight="57" id="rKe-83-uhN" customClass="ShowTableViewCell" customModule="RxTvMaze" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rKe-83-uhN" id="gjZ-pQ-qCn">
@@ -16,10 +16,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2BZ-xg-Hzp">
-                        <rect key="frame" x="24" y="23" width="366" height="22"/>
+                        <rect key="frame" x="24" y="16" width="366" height="29"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n44-dP-BbP">
-                                <rect key="frame" x="0.0" y="0.0" width="366" height="22"/>
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="2BZ-xg-Hzp" firstAttribute="leading" secondItem="gjZ-pQ-qCn" secondAttribute="leading" constant="24" id="6Gg-Xo-H3c"/>
-                    <constraint firstItem="2BZ-xg-Hzp" firstAttribute="top" secondItem="gjZ-pQ-qCn" secondAttribute="topMargin" constant="12" id="GMF-RS-QuQ"/>
+                    <constraint firstItem="2BZ-xg-Hzp" firstAttribute="top" secondItem="gjZ-pQ-qCn" secondAttribute="top" constant="16" id="GMF-RS-QuQ"/>
                     <constraint firstAttribute="trailing" secondItem="2BZ-xg-Hzp" secondAttribute="trailing" constant="24" id="eUr-pb-vQT"/>
                     <constraint firstAttribute="bottom" secondItem="2BZ-xg-Hzp" secondAttribute="bottom" constant="12" id="kdd-Lc-uDo"/>
                 </constraints>

@@ -15,6 +15,7 @@ class EpisodesViewController: UIViewController {
   typealias DataSource = RxCollectionViewSectionedAnimatedDataSource<AnimatableSectionModel<Int,EpisodeCellViewModel>>
   @IBOutlet private var searchBar: UISearchBar!
   @IBOutlet private var collectionView: UICollectionView!
+  @IBOutlet private var loadingView: LoadingView!
   private let viewModel: EpisodesViewModel
   private let disposeBag = DisposeBag()
   private var dataSource: DataSource?
@@ -30,8 +31,18 @@ class EpisodesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.title = "Episodes"
-    collectionView.collectionViewLayout = createLayout()
+    let refreshControl = UIRefreshControl()
+    refreshControl.attributedTitle = NSAttributedString(string: "Loading...")
+    collectionView.refreshControl = refreshControl
+    //collectionView.collectionViewLayout = createLayout()
     collectionView.register(UINib(nibName: String(describing: EpisodeCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: EpisodeCollectionViewCell.self))
+
+    let load =  refreshControl
+      .rx
+      .controlEvent(.valueChanged)
+      .map { _ in () }
+      .startWith(())
+      .asObservable()
 
     let dataSource = DataSource(configureCell: { _, collectionView, indexPath, viewModel in
       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: EpisodeCollectionViewCell.self), for: indexPath)
@@ -50,9 +61,22 @@ class EpisodesViewController: UIViewController {
       .distinctUntilChanged()
       .asObservable()
 
-    let sections = viewModel.outputs(filter: filter)
+    let outputs = viewModel.outputs(load: load, filter: filter)
 
-    sections
+    collectionView.backgroundView = loadingView
+
+    loadingView.setup(
+      loadingState: outputs.loadingState
+    )
+    
+    outputs
+      .loadingState
+      .map { $0 == .loading }
+      .drive(refreshControl.rx.isRefreshing)
+      .disposed(by: disposeBag)
+
+    outputs
+      .sections
       .drive(collectionView.rx.items(dataSource: dataSource))
       .disposed(by: disposeBag)
 

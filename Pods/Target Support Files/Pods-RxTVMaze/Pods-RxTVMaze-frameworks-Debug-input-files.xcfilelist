@@ -1,4 +1,4 @@
-${PODS_ROOT}/Target Support Files/Pods-RxTVMaze/Pods-RxTVMaze-frameworks.sh
+${PODS_ROOT}/Target Support Files/Pods-RxTvMaze/Pods-RxTvMaze-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Action/Action.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework

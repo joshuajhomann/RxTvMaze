@@ -14,21 +14,33 @@ import RxDataSources
 import Action
 
 class EpisodesViewModel: Stepper {
+  typealias Output = (sections: Driver<[Section]>, loadingState: Driver<LoadingState>)
   typealias Section = AnimatableSectionModel<Int, EpisodeCellViewModel>
   let steps = PublishRelay<Step>()
+  let tvService: TVServiceProtocol
   private let showId: Int
-  @TVServiceInjected var tvService: TVServiceProtocol
 
-  init(showId: Int) {
+  init(tvService:TVServiceProtocol, showId: Int) {
     self.showId = showId
+    self.tvService = tvService
   }
   
-  func outputs(filter: Observable<String>) -> Driver<[Section]> {
-    let allEpisodes = tvService
-      .episodes(showId: showId)
-      .asObservable()
+  func outputs(load: Observable<Void>, filter: Observable<String>) -> Output {
+    let loadingStateRelay = BehaviorRelay<LoadingState>(value: .loaded)
 
-    return Observable
+    let allEpisodes = load
+      .flatMapLatest { [tvService, showId] Void -> Observable<[Episode]> in
+        loadingStateRelay.accept(.loading)
+        return tvService
+          .episodes(showId: showId)
+          .catchError({error in
+            loadingStateRelay.accept(.error)
+            return .just([])
+          })
+          .asObservable()
+      }
+
+    let sections = Observable
       .combineLatest( allEpisodes, filter)
       .map { [weak steps] combined -> [Section] in
         let (episodes, term) = combined
@@ -36,10 +48,10 @@ class EpisodesViewModel: Stepper {
           ? episodes
           : episodes.filter { ($0.summary ?? "").contains(term) }
         let grouped = Dictionary(grouping: filteredEpisodes, by: { $0.season })
-        return grouped
+        let sections = grouped
           .keys
           .sorted()
-          .compactMap { [weak steps]  sectionId in
+          .compactMap { [weak steps]  sectionId -> Section in
             let viewModels = (grouped[sectionId] ?? []).map { [weak steps] episode -> EpisodeCellViewModel in
               let tapAction = CocoaAction { [weak steps]  in
                 steps?.accept(SearchStep.showEpisodeDetail(episode: episode))
@@ -48,8 +60,15 @@ class EpisodesViewModel: Stepper {
               }
             return Section(model: sectionId, items: viewModels)
           }
+        if loadingStateRelay.value == .loading {
+          loadingStateRelay.accept(sections.isEmpty ? .empty : .loaded)
+        }
+        return sections
       }
-     .asDriver(onErrorJustReturn: [])
+      .asDriver(onErrorJustReturn: [])
+
+    return (sections: sections,
+            loadingState: loadingStateRelay.asDriver().debug())
   }
 }
 

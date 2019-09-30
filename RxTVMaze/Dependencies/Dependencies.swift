@@ -8,14 +8,9 @@
 
 import Foundation
 
-struct Dependencies {
-  private (set) var tvService: TVServiceProtocol
-  static let shared = Dependencies()
-  private init () {
-    #if TEST
-      tvService = MockTVService()
-    #else
-      tvService = TVService()
-    #endif
+class Dependencies {
+  let tvService: TVServiceProtocol
+  init () {
+    tvService = TVService()
   }
 }

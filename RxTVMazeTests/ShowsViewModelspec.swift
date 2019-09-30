@@ -8,19 +8,20 @@
 
 import Quick
 import Nimble
-import RxNimble
 import RxBlocking
 import RxCocoa
 import RxFlow
 
-@testable import RxTVMaze
+@testable import RxTvMaze
 class ShowViewModelSpec: QuickSpec {
+  let mockTvService = MockTVService()
   override func spec() {
     describe("SearchViewModel") {
       context("when given an empty search term") {
         it("should return an empty array of cells") {
-          let viewModel = ShowsViewModel()
-          let cells = try? viewModel.outputs(searchTerm: .just("")).asObservable().toBlocking().first()
+          let outputs = ShowsViewModel(tvService: self.mockTvService)
+            .outputs(searchTerm: .just(""))
+          let cells = try? outputs.cellViewModels.asObservable().toBlocking().first()
           expect(cells?.count).to(equal(0))
         }
       }
@@ -28,18 +29,20 @@ class ShowViewModelSpec: QuickSpec {
     describe("SearchViewModel") {
       context("when given a search term") {
         it("should return the sample data with 10 items") {
-          let viewModel = ShowsViewModel()
-          let cells = try? viewModel.outputs(searchTerm: .just("Game of")).asObservable().toBlocking().first()
+          let outputs = ShowsViewModel(tvService: self.mockTvService)
+            .outputs(searchTerm: .just("Game of"))
+          let cells = try? outputs.cellViewModels.asObservable().toBlocking().first()
           expect(cells?.count).to(equal(10))
         }
       }
     }
     describe("ShowCellViewModel") {
       context("when initialized with game of thrones") {
-        it("should have the title 'Game of Thrones") {
-          let viewModel = ShowsViewModel()
-          let cellViewModels = try! viewModel.outputs(searchTerm: .just("Game of")).asObservable().toBlocking().first()!
-          let (name, _) = cellViewModels[0].outputs()
+        it("should have the title 'Winter is Coming") {
+          let outputs = ShowsViewModel(tvService: self.mockTvService)
+            .outputs(searchTerm: .just("Game of Thrones"))
+          let cellViewModels = try? outputs.cellViewModels.asObservable().toBlocking().first()
+          let name = cellViewModels?[0].outputs().title
           expect(name).to(equal("Game of Thrones"))
         }
       }
@@ -47,8 +50,9 @@ class ShowViewModelSpec: QuickSpec {
     describe("ShowCellViewModel") {
       context("when initialized with game of thrones") {
         it("should have an action that emits the ") {
-          let viewModel = ShowsViewModel()
-          let cellViewModels = try! viewModel.outputs(searchTerm: .just("Game of")).asObservable().toBlocking().first()!
+          let viewModel = ShowsViewModel(tvService: self.mockTvService)
+          let outputs = viewModel.outputs(searchTerm: .just("Game of"))
+          let cellViewModels = try! outputs.cellViewModels.asObservable().toBlocking().first()!
           let (_, action) = cellViewModels[0].outputs()
           let steps: BehaviorRelay<Step?> = .init(value: nil)
           let disposable = viewModel.steps.bind(to: steps)

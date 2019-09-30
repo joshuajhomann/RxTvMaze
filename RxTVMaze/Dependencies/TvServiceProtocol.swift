@@ -8,15 +8,6 @@
 
 import RxSwift
 
-@propertyWrapper
-struct TVServiceInjected {
-  var wrappedValue: TVServiceProtocol {
-    get {
-      return Dependencies.shared.tvService
-    }
-  }
-}
-
 protocol TVServiceProtocol {
   func search(query: String) -> Single<[Show]>
   func episodes(showId: Int) -> Single<[Episode]>

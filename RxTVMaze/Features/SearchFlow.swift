@@ -17,21 +17,31 @@ enum SearchStep: Step {
 }
 
 class SearchFlow: Flow {
+
+  let dependencies: Dependencies
+
   var root: Presentable {
     return navigationController
   }
 
   private let navigationController = UINavigationController()
 
+  init(dependencies: Dependencies) {
+    self.dependencies = dependencies
+  }
+  
   func navigate(to step: Step) -> FlowContributors {
     switch step as? SearchStep {
     case .showSearch:
-      let viewModel = ShowsViewModel()
+      let viewModel = ShowsViewModel(tvService: dependencies.tvService)
       let viewController = ShowsViewController(viewModel: viewModel)
       navigationController.pushViewController(viewController, animated: false)
       return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: viewModel))
     case .showEpisodes(let showId):
-      let viewModel = EpisodesViewModel(showId: showId)
+      let viewModel = EpisodesViewModel(
+        tvService: dependencies.tvService,
+        showId: showId
+      )
       let viewController = EpisodesViewController(viewModel: viewModel)
       navigationController.pushViewController(viewController, animated: true)
       return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: viewModel))

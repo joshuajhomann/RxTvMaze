@@ -13,8 +13,10 @@ import RxCocoa
 class ShowsViewController: UIViewController {
   @IBOutlet private var tableView: UITableView!
   @IBOutlet private var searchBar: UISearchBar!
+  @IBOutlet private var loadingView: LoadingView!
   private let viewModel: ShowsViewModel
   private let disposeBag = DisposeBag()
+  
   init(viewModel: ShowsViewModel) {
     self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
@@ -43,13 +45,18 @@ class ShowsViewController: UIViewController {
     )
     tableView.tableFooterView = UIView()
 
-    let cells = viewModel.outputs(searchTerm: term)
+    let (cells, loadingState) = viewModel.outputs(searchTerm: term)
 
     cells
       .drive(tableView.rx.items(cellIdentifier: String(describing: ShowTableViewCell.self), cellType: ShowTableViewCell.self)) { (row, viewModel, cell) in
         cell.configure(viewModel: viewModel)
       }
       .disposed(by: disposeBag)
+
+    loadingView.setup(
+      contentView: tableView,
+      loadingState: loadingState
+    )
 
     tableView
       .rx

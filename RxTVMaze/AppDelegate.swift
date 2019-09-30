@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  RxTVMaze
+//  RxTvMaze
 //
-//  Created by Joshua Homann on 9/14/19.
+//  Created by Joshua Homann on 9/28/19.
 //  Copyright © 2019 com.josh. All rights reserved.
 //
 
@@ -11,10 +11,8 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    
     return true
   }
 

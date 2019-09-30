@@ -1,5 +1,5 @@
-framework module Pods_RxTVMazeTests {
-  umbrella header "Pods-RxTVMazeTests-umbrella.h"
+framework module Pods_RxTvMazeTests {
+  umbrella header "Pods-RxTvMazeTests-umbrella.h"
 
   export *
   module * { export * }

@@ -15,6 +15,7 @@ class ShowTableViewCell: UITableViewCell {
   @IBOutlet private var titleLabel: UILabel!
   private var viewModel: ShowCellViewModel?
   private var tapAction: CocoaAction?
+  
   override func prepareForReuse() {
     super.prepareForReuse()
     tapAction = nil

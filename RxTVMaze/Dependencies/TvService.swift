@@ -12,15 +12,14 @@ import RxSwift
 struct TVService: TVServiceProtocol {
   private let provider = MoyaProvider<TVMazeService>()
   private func decoded<SomeDecodable: Decodable> (type: SomeDecodable.Type, from target: TVMazeService) -> Single<SomeDecodable> {
-    Observable<Data>.create { [provider] observer in
+    Single<Data>.create { [provider] observer in
       var cancellable: Cancellable?
       cancellable = provider.request(target) { result in
         switch result {
         case .success(let response):
-          observer.onNext(response.data)
-          observer.onCompleted()
+          observer(.success(response.data))
         case .failure(let error):
-          observer.onError(error)
+          observer(.error(error))
         }
       }
       return Disposables.create {
@@ -28,11 +27,10 @@ struct TVService: TVServiceProtocol {
       }
     }
     .map { try JSONDecoder().decode(SomeDecodable.self, from: $0) }
-    .asSingle()
   }
   func search(query: String) -> Single<[Show]> {
     decoded(type: [ShowResults].self, from: .search(query: query))
-    .map { $0.map { $0.show } }
+      .map { $0.map { $0.show } }
   }
   func episodes(showId: Int) -> Single<[Episode]> {
     decoded(type: [Episode].self, from: .episodes(showId: showId))
@@ -45,6 +43,10 @@ enum TVMazeService {
 }
 
 extension TVMazeService: TargetType {
+  var sampleData: Data {
+    return Data()
+  }
+
   var headers: [String : String]? {
     [:]
   }
@@ -81,18 +83,5 @@ extension TVMazeService: TargetType {
     case .search(let query):
       return .requestParameters(parameters: ["q": query], encoding: URLEncoding.default)
     }
-  }
-
-  var sampleData: Data {
-    #if test
-    switch self {
-    case .search:
-      return try! Data(contentsOf: Bundle.main.url(forResource: "Episodes", withExtension: "json")!)
-    case .episodes:
-      return try! Data(contentsOf: Bundle.main.url(forResource: "Episodes", withExtension: "json")!)
-    }
-    #else
-    fatalError("sample data is only for the test target")
-    #endif
   }
 }

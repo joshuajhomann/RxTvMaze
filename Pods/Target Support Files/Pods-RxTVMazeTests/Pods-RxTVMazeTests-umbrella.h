@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_RxTVMazeTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_RxTVMazeTestsVersionString[];
+FOUNDATION_EXPORT double Pods_RxTvMazeTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_RxTvMazeTestsVersionString[];
 
